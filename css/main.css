@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Sigmar&display=swap');
+body {
+        font-family: "Quicksand", sans-serif;
+        margin: 0; /* remove all body margin */
+        font-size: 120%;
+}
+header {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+ }
+header h1 {
+        font-family: "Sigmar", cursive;
+        font-size: 200%;
+        font-weight: lighter;
+        color: black;
+}
+nav {
+        background-color: #1e419c;
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        display: flex; /* displays the children of this element as flexible boxes */
+        align-items: center; /* align child flexible boxes in the vertical center */
+}
+nav p {
+        text-align: center;
+        flex-basis: 100px; /* gives each paragraph the same width */
+        flex-grow: 1; /* allow each paragraph to grow evenly to fill up the parent nav element */
+}
+nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; 
+}
+nav a:hover {
+    color: #d60a0a;
+}
+footer {
+        background-color: #d60a0a; /* background or background-color both work */
+        position: fixed; /* fix to viewport */
+        bottom: 0; /* start 0 pixels from the bottom of the viewport */
+        left: 0; /* start 0 pixels from the left of the viewport */
+        width: 100%; /* set the width to 100% of the viewort */
+        height: 3em; /* set the footer elements height to 3 times larger than its current font size */
+        border-top: solid black 1px; /* have to put unit, e.g. px or % if not zero */
+}
+h1, h2 {
+        font-family: "McLaren", serif;
+        color:#fad215;
+}
+.main {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 4em; /* larger margin to allow for the footer */
+}
+.center {
+        text-align: center;
+}
+.wrap {
+    float: right;
+}
+.caption {
+    font-style: italic;
+    font-size: small;
+}
+
+/*CSS added for styling navigation menu buttons*/
+.navigation {
+        padding: 10px;
+        gap: 20px; 
+        display: flex; /* Display the children of thid element as flexible boxes*/
+}
+
+nav button {
+  flex-basis: 100px; /* give each paragraph the same basic width */
+  flex-grow: 1; /* allow each paragraph to grow evenly to fill up the    parent nav element */
+  text-align: center;
+  height: 40px;
+  border-radius: 10px;
+}
+
+button {
+        background-color: cyan;
+        font-weight: bold;
+}
+
+button:hover {
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200 cyan,
+}
