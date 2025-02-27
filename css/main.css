@@ -109,9 +109,10 @@ button:hover {
   header {
     background-color: yellow;
   }
-        header h1 {
-    font-size: 150%; /*change font size */
-}
-    .icon {
-        width: 100px; /*change width*/
+  header h1 {
+    font-size: 120%; /*change font size */
   }
+  .icon {
+    width: 100px; /*change width*/
+  }
+
