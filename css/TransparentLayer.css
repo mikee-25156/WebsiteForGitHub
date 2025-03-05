@@ -1,37 +1,67 @@
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 20px;
-}
-
-.image1, .image2, .image3 {
-  flex: 1;
-  height: 300px;
-  background-size: cover;
+.image1{
+  float: left;
+  width: 33.3%
+  height: 100px; 
   background-position: center;
-  position: relative;
+  background-size: cover;
+  background-image: url(images/sinigang.png);
+}
+.image2{
+  float: left;
+  width: 33.3%
+  height: 100px; 
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/bulalo.png);
+}
+.image3{
+  float: left;
+  width: 33.3%
+  height: 100px; 
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/sisig.png);
+}
+.image4{
+  float: left;
+  width: 33.3%
+  height: 100px; 
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/adobo.png);
+}
+.image5{
+  float: left;
+  width: 33.3%
+  height: 100px; 
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/lechon.png);
+}
+.image6{
+  float: left;
+  width: 33.3%
+  height: 100px; 
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/kare-kare.png);
 }
 
-.image1 {
-  background-image: url('../images/bulalo.png');
-}
-
-.image2 {
-  background-image: url('../images/sinigang.png');
-}
-
-.image3 {
-  background-image: url('../images/sisig.png');
-}
-
-.image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+.image-overlay{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(208, 189, 139, 0.58)
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1opx;
+}
+.image-overlay h1 {
+  color: red;
+}
+
+.image-overlay:hover {
+  background-color: transparent;
 }
