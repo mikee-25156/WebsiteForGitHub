@@ -16,7 +16,7 @@ border-radius: 100%
 }
 
 /* apply the zoom effect on hover */
-.grid-item:hover {
-   transform: scale (2);
-   order: 0;
+.grid-item:hover img {
+   transform: scale (1.2);
+  
 } 
