@@ -126,8 +126,13 @@ button:hover {
       border: 1px solid #ccc;
       padding: 20px;
       text-align: center;
-      font-weight: bold;
+      font-weight: bolder;
     }
+
+.grid-item p {
+  text-align: justify;
+  font-weight: lighter;
+}
 
     .grid-item img {
       width: 300px; 
