@@ -83,6 +83,13 @@ h1 {
     font-size: small;
 }
 
+.page3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
 /*CSS added for styling navigation menu buttons*/
 .navigation {
         padding: 10px;
