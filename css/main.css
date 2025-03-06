@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=McLaren&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=McLaren&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Sigmar&display=swap');
+@import url @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=McLaren&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Sigmar&display=swap');
+@import url ('https://fonts.googleapis.com/css2?family=Lilita+One&family=McLaren&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Sigmar&display=swap');
 body {
-        font-family: "Quicksand", sans-serif;
+        font-family: "Rokkitt", sans-serif;
         margin: 0; /* remove all body margin */
         font-size: 120%;
+        text-align: justify;
 }
 
 /* start styling the header and its content */
@@ -55,12 +59,12 @@ footer {
         height: 3em; /* set the footer elements height to 3 times larger than its current font size */
         border-top: solid black 1px; /* have to put unit, e.g. px or % if not zero */
 }
-h1, h2 {
-        font-family: "McLaren", serif;
+h2 {
+        font-family: "Lilita One", serif;
         color:#fad215;
-h3 {
-       font-family: "McLaren", serif;
-        color:#000000; 
+h1 {
+       font-family: "Lilita One", serif;
+        color:#0f0f0f; 
 }
 }
 .main {
@@ -95,18 +99,53 @@ nav button {
 }
 
 button {
-        background-color: cyan;
+        background-color: #1e419c;
         font-weight: bold;
 }
 
 button:hover {
-        background-color: #00ffff;
-        box-shadow: 0 0 5px cyan,
-                   0 0 25px cyan;
+        background-color: #2f69ee;
+        box-shadow: 0 0 5px #d60a0a,
+                   0 0 25px #fad215;
         transform: scale(1.05);
         transition: all 0.3s ease;
         cursor: pointer;
 }
+
+
+/*start of styling my grid display on page 2*/
+    /* define the grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* three columns with equal width */
+      gap: 20px; /* gap between grid items */
+    }
+
+    /* style for each grid item */
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .grid-item img {
+      width: 300px; 
+      height: 400px;
+            /* ensure the image takes up 70% of its container height */
+    }
+
+    /* media query for screens smaller than 800 pixels */ 
+    @media (max-width: 800px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr; /* change to two columns */
+      }
+            .grid-item img {
+                  width: 200px; 
+                  height: 300px;
+    }
+
+/*End of styling my grid display on page 2*/
 
 /* media query for screens smaller than 600 pixels*/
 @media (max-width: 600px) {
@@ -119,4 +158,8 @@ button:hover {
   .icon {
     width: 100px; /*change width*/
   }
+ .grid-container {
+ grid-template-columns: 1fr; /* change to a single column */
+ }
+}
 
