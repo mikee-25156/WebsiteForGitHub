@@ -11,6 +11,8 @@ border-radius: 100%
   position: relative;
 }
 
+
+
 /* add transition for smooth zooming */ 
 .grid-item img {
   transition: transform 0.3s ease;
