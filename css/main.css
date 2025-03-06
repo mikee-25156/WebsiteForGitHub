@@ -83,13 +83,6 @@ h1 {
     font-size: small;
 }
 
-.page3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-}
-
 /*CSS added for styling navigation menu buttons*/
 .navigation {
         padding: 10px;
@@ -158,7 +151,6 @@ button:hover {
     }
 
 /*End of styling my grid display on page 2*/
-
 
 /* media query for screens smaller than 600 pixels*/
 @media (max-width: 600px) {
